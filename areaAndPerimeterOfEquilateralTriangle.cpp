@@ -11,16 +11,17 @@
 int main() {
     // this function calculates area and perimeter of equilateral triangle
     int side;
-    double area;
+    float area;
     double perimeter;
     // input
     std::cout << "Enter the side of the equilateral triangle (mm): ";
     std::cin >> side;
     // process
     area = sqrt(3) / 4 * (pow(side, 2));
+    perimeter = side * 3;
     // output
     std::cout << "" << std::endl;
-    std::cout << "Area is " << area << " mm²" << std::endl;
-    std::cout << "Perimeter is " << perimeter << " mm" << std::endl;
+    std::cout << "Area is " << area << " mm²." << std::endl;
+    std::cout << "Perimeter is " << perimeter << " mm." << std::endl;
     std::cout << "\nDone." << std::endl;
 }
