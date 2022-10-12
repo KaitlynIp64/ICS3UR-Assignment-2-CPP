@@ -17,7 +17,7 @@ int main() {
     std::cout << "Enter the side of the equilateral triangle (mm): ";
     std::cin >> side;
     // process
-    area = sqrt(3) / 4 * (pow(side, 2));
+    area = round(sqrt(3) / 4 * (pow(side, 2)) * 100) / 100;
     perimeter = side * 3;
     // output
     std::cout << "" << std::endl;
